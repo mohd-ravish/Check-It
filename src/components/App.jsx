@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="container">
       <div className="heading">
-        <h1>To-Do List</h1>
+        <h1>Check-It</h1>
       </div>
       <div className="form">
         <input onChange={handleInputItem} type="text" value={inputItem} />
