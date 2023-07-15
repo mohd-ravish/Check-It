@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Item from "./Item";
+import "./app.css"
 
 function App() {
   const [inputItem, setInputItem] = useState("");
