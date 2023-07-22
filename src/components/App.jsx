@@ -10,7 +10,7 @@ function App() {
   function handleInputItem(event) {
     setInputItem(event.target.value);
   }
-  
+
   function addItem() {
     if (inputItem !== "") {
       setItems((prevItems) => {
@@ -21,21 +21,21 @@ function App() {
   }
 
   useEffect(() => {
-		const savedItems = JSON.parse(
-			localStorage.getItem('react-notes-app-data')
-		);
+    const savedItems = JSON.parse(
+      localStorage.getItem('react-notes-app-data')
+    );
 
-		if (savedItems) {
-			setItems(savedItems);
-		}
-	}, []);
+    if (savedItems) {
+      setItems(savedItems);
+    }
+  }, []);
 
-	useEffect(() => {
-		localStorage.setItem(
-			'react-notes-app-data',
-			JSON.stringify(items)
-		);
-	}, [items]);
+  useEffect(() => {
+    localStorage.setItem(
+      'react-notes-app-data',
+      JSON.stringify(items)
+    );
+  }, [items]);
 
   return (
     <div className="container">
